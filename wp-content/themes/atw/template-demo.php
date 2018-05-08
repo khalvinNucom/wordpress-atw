@@ -1,10 +1,14 @@
-<?php /* Template Name: Demo Page Template */ get_header(); ?>
+<?php 
+
+/* Template Name: Demo Page Template */ 
+
+get_header(); ?>
 
 	<main role="main">
 		<!-- section -->
 		<section>
 
-			<h1><?php the_title(); ?></h1>
+			<h2><span><?php the_title(); ?></span></h2>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -13,11 +17,9 @@
 
 				<?php the_content(); ?>
 
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
-
 				<br class="clear">
 
-				<?php edit_post_link(); ?>
+				
 
 			</article>
 			<!-- /article -->
@@ -40,6 +42,6 @@
 		<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
+
 
 <?php get_footer(); ?>

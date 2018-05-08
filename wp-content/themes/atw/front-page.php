@@ -5,7 +5,7 @@
 <div class="wrapper">
 
 
-
+ 
 	<section class="upcoming-tours">
 
 		<h2><span> Upcoming Travels </span></h2>

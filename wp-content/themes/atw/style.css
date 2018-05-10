@@ -30,6 +30,8 @@
 }
 
 
+
+
 /* html element 62.5% font-size for REM use */
 
 html {
@@ -41,6 +43,8 @@ body {
     font: 300 16px/1.6 'Raleway', sans-serif;
     color: #585858;
 }
+
+
 
 
 /* clear */
@@ -88,6 +92,8 @@ input:focus {
 }
 
 
+
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -103,35 +109,44 @@ input:focus {
 }
 
 
+
+
 /* header */
 
+
 /*UX-------------------------------*/
-.nav ul li:hover{
-transition: .300s all ease;
-background-color: #e1800d;
-transform: scale(1.1);
+
+.nav ul li:hover,
+.slicknav_menu ul li:hover {
+    transition: .300s all ease;
+    background-color: #e1800d;
+    transform: scale(1.1);
 }
-.tryyy{
-	height: 200px;
-	width: 100%;
-	background-color: red;
+
+.slicknav_nav a:hover {
+    background: transparent!important;
+    color: white!important;
+}
+
+.tryyy {
+    height: 200px;
+    width: 100%;
+    background-color: red;
 }
 
 .searchform input.search-input:focus {
-  
+
     width: 417px;
     opacity: 1;
-}	
-.searchform input.search-input{
-	 transition: all .400s cubic-bezier(.66,.26,.59,1.33);
-
-
 }
 
-.searchform button.search-submit {
-
-
+.searchform input.search-input {
+    transition: all .400s cubic-bezier(.66, .26, .59, 1.33);
 }
+
+.searchform button.search-submit {}
+
+
 
 
 
@@ -153,6 +168,8 @@ transform: scale(1.1);
 }
 
 
+
+
 /* logo */
 
 .logo {
@@ -167,7 +184,10 @@ transform: scale(1.1);
         text-align: left;
         margin-bottom: 0px;
     }
-    .logo-img {}
+    .slicknav_menu{
+    	display: none;
+    }
+    
 }
 
 .logo-img {
@@ -175,26 +195,33 @@ transform: scale(1.1);
 }
 
 
+
+
 /* nav */
 
 .nav {}
 
-.nav ul {
+.nav ul,
+.slicknav_menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: none;
 }
 
-.nav ul li {
+.nav ul li,
+.slicknav_menu ul li {
     padding: 20px 0px;
     text-align: center;
 }
 
-.nav ul li.current_page_item {
+.nav ul li.current_page_item,
+.slicknav_menu ul li.current_page_item {
     background-color: #df7900;
 }
 
-.nav ul li a {
+.nav ul li a,
+.slicknav_menu ul li a {
     font-size: 14px;
     font-size: 1.4rem;
     font-weight: bold;
@@ -211,6 +238,7 @@ transform: scale(1.1);
     .nav ul {
         height: 73px;
         float: right;
+        display: block;
     }
     .nav ul li {
         float: left;
@@ -219,7 +247,7 @@ transform: scale(1.1);
         line-height: 70px;
     }
 }
- 
+
 div.featuredImage {
     height: 300px;
     width: 100%;
@@ -237,15 +265,15 @@ div.featuredImage {
 }
 
 .searchform input.search-input {
-      border-radius: 8px;
+    border-radius: 8px;
     border: none;
     padding: 12px 57px 12px 12px;
     width: 269px;
     opacity: 0.7;
-}	
+}
 
 .searchform button.search-submit {
-       border: none;
+    border: none;
     padding: 12px;
     position: absolute;
     top: 0;
@@ -258,13 +286,16 @@ div.featuredImage {
 .searchform form.search {
     margin-top: -160px;
     margin-right: 46px;
-
 }
+
+
 
 
 /* sidebar */
 
 .sidebar {}
+
+
 
 
 /* footer */
@@ -283,40 +314,47 @@ div.featuredImage {
     font-size: 1.5rem;
 }
 
-.footer h3{
-	font-weight: 400 ;
+.footer h3 {
+    font-weight: 400;
 }
 
 ul.coupon.list-footer {
-	list-style: none;
-	padding: 0;
+    list-style: none;
+    padding: 0;
 }
+
 ul.coupon.list-footer li {
-margin: 5px 0;
+    margin: 5px 0;
 }
 
-.widgets >h3 {
-	margin: 0;
+.widgets>h3 {
+    margin: 0;
 
-	font-size:2rem;
+    font-size: 2rem;
 }
+
 .widget_coupon h3 {
-	display: none;
-
+    display: none;
 }
 
-.copyrightFooter p{
-text-align: center!important;
-margin-bottom: 0;
-padding: 10px 0;
-font-weight: bold;
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb60b3+1,919191+50&0+23,1+50,0+77 */
-background: -moz-linear-gradient(left, rgba(203,96,179,0) 1%, rgba(177,118,164,0) 23%, rgba(145,145,145,1) 50%, rgba(145,145,145,0) 77%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, rgba(203,96,179,0) 1%,rgba(177,118,164,0) 23%,rgba(145,145,145,1) 50%,rgba(145,145,145,0) 77%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, rgba(203,96,179,0) 1%,rgba(177,118,164,0) 23%,rgba(145,145,145,1) 50%,rgba(145,145,145,0) 77%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cb60b3', endColorstr='#00919191',GradientType=1 ); /* IE6-9 */
+.copyrightFooter p {
+    text-align: center!important;
+    margin-bottom: 0;
+    padding: 10px 0;
+    font-weight: bold;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb60b3+1,919191+50&0+23,1+50,0+77 */
+    background: -moz-linear-gradient(left, rgba(203, 96, 179, 0) 1%, rgba(177, 118, 164, 0) 23%, rgba(145, 145, 145, 1) 50%, rgba(145, 145, 145, 0) 77%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(203, 96, 179, 0) 1%, rgba(177, 118, 164, 0) 23%, rgba(145, 145, 145, 1) 50%, rgba(145, 145, 145, 0) 77%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(203, 96, 179, 0) 1%, rgba(177, 118, 164, 0) 23%, rgba(145, 145, 145, 1) 50%, rgba(145, 145, 145, 0) 77%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cb60b3', endColorstr='#00919191', GradientType=1);
+    /* IE6-9 */
 }
+
+
+
 /*** GRID ***/
 
 [class*='grid'] {
@@ -354,6 +392,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cb60b3', e
         width: 33.3%;
     }
 }
+
+
 
 
 /*------------------------------------*\
@@ -395,6 +435,8 @@ h2::after {
 }
 
 
+
+
 /************************************************* ABOUT us section *****************************************************/
 
 div.photo {
@@ -422,6 +464,8 @@ div.photo:nth-child(even) {
 }
 
 
+
+
 /************************************************* TOUR section *****************************************************/
 
 ul.tours {
@@ -432,6 +476,8 @@ ul.tours {
 ul.tours li {
     margin: 0 auto 20px 0;
 }
+
+
 
 
 /* ul.tours li:hover  img{
@@ -496,6 +542,8 @@ ul.tours li .tour-description ul li {
 }
 
 
+
+
 /************************************************* SINGLE tours section *****************************************************/
 
 div.featuredImage:after {
@@ -558,6 +606,8 @@ div.itinerary h3 {
 body.single-our_tours div.slideshowlink a {
     display: none;
 }
+
+
 
 
 /*Testimonials*/
@@ -631,6 +681,8 @@ div article h3 {
 }
 
 
+
+
 /************************************************* BLOG section *****************************************************/
 
 .post h3 a {
@@ -698,6 +750,8 @@ div.share div.pShare {
 }
 
 
+
+
 /************************************************* CONTACT form section *****************************************************/
 
 .wpcf7 {
@@ -746,11 +800,16 @@ input.wpcf7-submit:hover {
 }
 
 
+
+
 /************************************************* HOME section *****************************************************/
 
 section.slider .bx-wrapper {
     border: none;
 }
+
+
+
 /*section.upcoming-tours {
     margin-top: -59px;
 }*/
@@ -877,6 +936,8 @@ div.bottom-content li h3 {
 }
 
 
+
+
 /* Google Fonts
 font-family: 'Raleway', sans-serif;
 font-family: 'Bowlby One SC', cursive;
@@ -901,6 +962,8 @@ font-family: 'Bowlby One SC', cursive;
 }
 
 
+
+
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
@@ -919,6 +982,8 @@ font-family: 'Bowlby One SC', cursive;
 
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
 only screen and (min-resolution:144dpi) {}
+
+
 
 
 /*------------------------------------*\
@@ -942,6 +1007,8 @@ only screen and (min-resolution:144dpi) {}
     color: #FFF;
     text-shadow: none;
 }
+
+
 
 
 /*------------------------------------*\
@@ -1028,6 +1095,8 @@ a img.aligncenter {
 .sticky {}
 
 .bypostauthor {}
+
+
 
 
 /*------------------------------------*\

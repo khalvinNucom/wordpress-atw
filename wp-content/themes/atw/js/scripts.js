@@ -5,8 +5,8 @@
         'use strict';
 
         $('nav.nav ul').slicknav({
-			duration: 1000,
-			easingOpen: "easeOutBounce", //available with jQuery UI
+			duration: 500,
+			easingOpen: 'easeInOutQuint', //available with jQuery UI
 		});
 
         $('ul.slider').bxSlider({

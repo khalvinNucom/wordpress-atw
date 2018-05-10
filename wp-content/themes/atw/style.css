@@ -174,7 +174,7 @@ input:focus {
 
 .logo {
     text-align: center;
-    margin-bottom: 20px;
+    
 }
 
 @media only screen and (min-width: 768px) {
@@ -182,7 +182,10 @@ input:focus {
         width: 40%;
         float: left;
         text-align: left;
-        margin-bottom: 0px;
+        .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
     }
     .slicknav_menu{
     	display: none;

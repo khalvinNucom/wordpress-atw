@@ -4,6 +4,7 @@
 
         'use strict';
 
+
         $('nav.nav ul').slicknav({
 			duration: 500,
 			easingOpen: 'easeInOutQuint', //available with jQuery UI

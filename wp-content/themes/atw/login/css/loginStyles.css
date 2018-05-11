@@ -1,3 +1,68 @@
-body.login{
-	background: transparent;
-}
+	body.login {
+	    background: transparent;
+	    display: flex;
+	    align-items: center;
+	    align-content: center;
+	    justify-content: center;
+	}
+	body.login div#login {
+	    background-color: rgba(0, 0, 0, .65);
+	    padding: 40px 30px;
+	    width: auto;
+	    margin: 10px;
+	    border-radius: 10px;
+	}
+	@media screen and (min-width: 768px) {
+	    body.login div#login {}
+	    body.login div#login h1 {
+	        display: inline-block;
+	       padding: 0 60px 0 30px;
+	    }
+	    body.login div#login h1 a {
+	        background-image: url(../img/logo.png);
+	        background-size: 200px;
+	        width: 200px;
+	        height: 143px;
+	    }
+	    body.login div#login form#loginform {
+	        display: inline-block;
+	    }
+	    body.login div#login p#nav, body.login div#login p#backtoblog {
+	        display: inline-block;
+	        margin: 0;
+	        padding: 0 0 0 55px;
+	        padding-top: 0px;
+	        padding-right: 0px;
+	        padding-bottom: 0px;
+	    }
+	    div#login .bottom {
+	        display: flex;
+	        justify-content: flex-end;
+	    }
+	}
+	body.login div#login h1 {}
+	body.login div#login h1 a {
+	    background-image: url(../img/logo.png);
+	    background-size: 200px;
+	    width: 200px;
+	    height: 143px;
+	}
+	body.login div#login form#loginform {}
+	body.login div#login form#loginform p {}
+	body.login div#login form#loginform p label {}
+	body.login div#login form#loginform input {}
+	body.login div#login form#loginform input#user_login {}
+	body.login div#login form#loginform input#user_pass {}
+	body.login div#login form#loginform p.forgetmenot {}
+	body.login div#login form#loginform p.forgetmenot input#rememberme {}
+	body.login div#login form#loginform p.submit {}
+	body.login div#login form#loginform p.submit input#wp-submit {}
+	body.login div#login p#nav, body.login div#login p#backtoblog {
+	    text-align: center;
+	}
+	body.login div#login p#nav a, body.login div#login p#backtoblog a {
+	    color: white;
+	    /*font-size: 1rem;*/
+	}
+	body.login div#login p#backtoblog {}
+	body.login div#login p#backtoblog a {}
